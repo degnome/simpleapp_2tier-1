@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  db:
+    image: microsoft/mssql-server-linux
+    ports:
+      - "9433:1433"
+    entrypoint: sh
+    command: -c '/opt/mssql/bin/sqlservr & /opt/mssql-tools/bin/sqlcmd -l 30 -S localhost -U sa -P $${SA_PASSWORD} -d tempdb -q "CREATE DATABASE $${DATABASE}"; wait'
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "PasswordAzure@123!"
+      DATABASE: "SimpleAppDB"
+  web:
+    image: ${DOCKER_REGISTRY}simpleappweb
+    build:
+      context: .
+      dockerfile: SimpleApp/Dockerfile
+    environment:
+      CONNECTIONSTRING: "Data Source=db,1433;Initial Catalog=SimpleAppDB;User ID=sa;Password=PasswordAzure@123!"
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
