@@ -5,7 +5,7 @@ This is a simple 2 Tier Code Sample that connects to a SQL Database and retrieve
 - Web Tier  (DotNet Core MVC Website)
 - DB Tier   (SQL Datatbase with a single table)
 
-## Instructions to run locally on a Developer Workstation
+## Instructions to run locally on a Developer Workstation as code.
 
 __Requirements:__
 
@@ -54,7 +54,7 @@ cd ..
 dotnet run --project SimpleApp
 ```
 
-## Instructions to run under docker
+## Instructions to run locally on a Developer Workstation using docker.
 
 __Requirements:__
 
