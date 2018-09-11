@@ -11,23 +11,23 @@ __Requirements:__
 
 1. [DotNet Core](https://docs.microsoft.com/en-us/dotnet/core/about)
 
-```powershell
-dotnet --version
+    ```powershell
+    dotnet --version
 
-## Result
-2.1.400
+    ## Result
+    2.1.400
 ```
 
 2. [LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2016-express-localdb?view=sql-server-2017)
 
-```powershell
-SQLLocalDB
+    ```powershell
+    SQLLocalDB
 
-## Result   
-Microsoft (R) SQL Server Express LocalDB Command Line Tool
-Version 13.0.1601.5
-...
-```
+    ## Result   
+    Microsoft (R) SQL Server Express LocalDB Command Line Tool
+    Version 13.0.1601.5
+    ...
+    ```
 
 > Note: SQL can be run in a Container if desired see README.md in Database Folder for Directions
 
