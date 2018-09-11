@@ -3,33 +3,24 @@ resources:
 queue:
   name: Hosted VS2017
 
-parameters:
-  RestoreBuildProjects: '**/*.csproj'
-  UnitTestProjects: '**/*.Tests/*.csproj'
-
-# Required Variables to be created
-# - Parameters.RestoreBuildProjects
-# - BuildConfiguration
-# - Parameters.UnitTestProjects
-
 steps:
 - task: DotNetCoreCLI@2
   displayName: Restore
   inputs:
     command: restore
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '$(BuildProjects)'
 
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '$(BuildProjects)'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
     command: test
-    projects: '$(Parameters.UnitTestProjects)'
+    projects: '$(TestProjects)'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
