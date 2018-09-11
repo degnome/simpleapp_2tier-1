@@ -6,15 +6,15 @@ __Requirements:__
 
 1. [Docker](https://www.docker.com/get-started)
 
-```powershell
-docker --version
-docker-compose --version
+    ```powershell
+    docker --version
+    docker-compose --version
 
 
-## Result
-Docker version 18.06.1-ce, build e68fc7a
-docker-compose version 1.22.0, build f46880fe
-```
+    ## Result
+    Docker version 18.06.1-ce, build e68fc7a
+    docker-compose version 1.22.0, build f46880fe
+    ```
 
 ## Start and Stop the Database
 

@@ -5,7 +5,7 @@ This is a simple 2 Tier Code Sample that connects to a SQL Database and retrieve
 - Web Tier  (DotNet Core MVC Website)
 - DB Tier   (SQL Datatbase with a single table)
 
-## Instructions to run on a Developer Workstation
+## Instructions to run locally on a Developer Workstation
 
 __Requirements:__
 
@@ -33,11 +33,9 @@ __Requirements:__
 
 __Installation:__
 
-```powershell
-# Clone the Repository
-git clone https://github.com/danielscholl/simpleapp_2tier.git simpleapp_2tier
-cd simpleapp_2tier
+To install or run the app locally simply clone the repo locally and follow the instructions.
 
+```powershell
 # Restore and Build
 dotnet restore
 dotnet build
@@ -56,7 +54,25 @@ cd ..
 dotnet run --project SimpleApp
 ```
 
-__Containers:__
+## Instructions to run under docker
+
+__Requirements:__
+
+1. [Docker](https://www.docker.com/get-started)
+
+```powershell
+docker --version
+docker-compose --version
+
+
+## Result
+Docker version 18.06.1-ce, build e68fc7a
+docker-compose version 1.22.0, build f46880fe
+```
+
+__Installation:__
+
+To install or run the app under docker simply clone the repo locally and follow the instructions.
 
 ```powershell
 # Build the Containers
