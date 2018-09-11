@@ -3,6 +3,10 @@ resources:
 queue:
   name: Hosted VS2017
 
+parameters:
+  RestoreBuildProjects: '**/*.csproj'
+  UnitTestProjects: '**/*.Tests/*.csproj'
+
 # Required Variables to be created
 # - Parameters.RestoreBuildProjects
 # - BuildConfiguration
