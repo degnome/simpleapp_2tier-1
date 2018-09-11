@@ -16,9 +16,9 @@ __Requirements:__
 
     ## Result
     2.1.400
-```
+    ```
 
-2. [LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2016-express-localdb?view=sql-server-2017)
+2. [LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2016-express-localdb?view=sql-server-2017)  
 
     ```powershell
     SQLLocalDB
