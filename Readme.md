@@ -2,14 +2,20 @@
 
 [![Build Status](https://cloudcodeit.visualstudio.com/DemoStuff/_apis/build/status/danielscholl.simpleapp_2tier)](https://cloudcodeit.visualstudio.com/DemoStuff/_build/latest?definitionId=25)
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdanielscholl%2Fsimpleapp_2tier%2Fmaster%2Fazuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
+
 
 This is a simple 2 Tier Code Sample that connects to a SQL Database and retrieves some records, then displays them on a web page.  The purpose of this code sample is to workload options for running a 2 Tier App.
 
 - Web Tier  (DotNet Core MVC Website)
 - DB Tier   (SQL Datatbase with a single table)
+
+## Infrastructure Deployment
+
+Create in Azure a 2 Tier PaaS Architecture
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdanielscholl%2Fsimpleapp_2tier%2Fmaster%2Fazuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
 
 ## Instructions to run locally on a Developer Workstation as code.
 
