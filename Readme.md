@@ -7,11 +7,8 @@ This is a simple 2 Tier Code Sample that connects to a SQL Database and retrieve
 - Web Tier  (DotNet Core MVC Website)
 - DB Tier   (SQL Datatbase with a single table)
 
+_2 Tier PaaS Architecture Diagram_  
 ![[0]][0]
-_Architecture Diagram_
-
-
-__Infrastructure:__
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdanielscholl%2Fsimpleapp_2tier%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
