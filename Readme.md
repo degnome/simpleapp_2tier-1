@@ -15,8 +15,6 @@ This is a simple 2 Tier Code Sample that connects to a SQL Database and retrieve
 
 ![[0]][0]
 
-## Instructions to run locally on a Developer Workstation as code.
-
 __Requirements:__
 
 1. [DotNet Core](https://docs.microsoft.com/en-us/dotnet/core/about)
